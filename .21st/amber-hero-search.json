@@ -1,0 +1,26 @@
+[
+  {
+    "type": "component",
+    "id": 19078,
+    "name": "Split Hero With Image Cards",
+    "description": "A split hero section with a serif headline, avatar social proof, and two image cards featuring invertible overlay text and call-to-action buttons.",
+    "previewUrl": "https://cdn.21st.dev/felipemenezes098/hero-08/default/preview.1783679118535.png",
+    "videoUrl": null,
+    "author": "felipemenezes098",
+    "authorImage": "https://www.google.com/s2/favicons?domain=ui.flexnative.com&sz=128",
+    "installCommand": "npx shadcn@latest add \"https://21st.dev/r/felipemenezes098/hero-08?api_key=$API_KEY_21ST\"",
+    "url": "https://21st.dev/@felipemenezes098/components/hero-08"
+  },
+  {
+    "type": "component",
+    "id": 19157,
+    "name": "Hero Color Panel",
+    "description": "Split-layout hero section with animated shader color panel visuals, a CTA button, and tech stack badges.",
+    "previewUrl": "https://cdn.21st.dev/cult-ui/hero-color-panel/default/preview.1783695518387.png",
+    "videoUrl": "https://cdn.21st.dev/cult-ui/hero-color-panel/default/video.1783695518387.mp4",
+    "author": "cult-ui",
+    "authorImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ2l0aHViL2ltZ18yclc2M0p4MUJxb1RqQzh4Q3VhOG55MXQxbUMifQ",
+    "installCommand": "npx shadcn@latest add \"https://21st.dev/r/cult-ui/hero-color-panel?api_key=$API_KEY_21ST\"",
+    "url": "https://21st.dev/@cult-ui/components/hero-color-panel"
+  }
+]

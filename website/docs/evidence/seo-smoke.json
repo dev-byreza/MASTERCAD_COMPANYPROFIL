@@ -1,0 +1,9 @@
+{
+  "home200": true,
+  "homeCanonical": true,
+  "homeTitle": true,
+  "adminNoindex": true,
+  "sitemapHasConcept": true,
+  "sitemapExcludesAdmin": true,
+  "sitemapExcludesQaArchive": true
+}

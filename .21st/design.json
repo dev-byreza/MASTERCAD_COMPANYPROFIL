@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "project": {
+    "name": "MASTERCAD COMPANY PROFIL",
+    "productType": "CAD engineering company profile with content admin",
+    "stack": [
+      "Next.js 16.3.8",
+      "React 19.3.0",
+      "TypeScript",
+      "CSS variables",
+      "SQLite local",
+      "Better Auth"
+    ]
+  },
+  "sources": {
+    "tokens": [
+      "website/src/app/globals.css",
+      "website/src/app/landing.css",
+      "website/src/app/home-redesign.css",
+      "website/src/app/(public)/page.tsx"
+    ],
+    "components": [],
+    "assets": [],
+    "instructions": []
+  },
+  "design": {
+    "colorMode": "light engineering editorial landing with amber and charcoal accents; light secondary pages and admin",
+    "colors": {
+      "brand": "#FFBF00",
+      "ink": "#17191C",
+      "muted": "#62676D",
+      "canvas": "#F2F0E9",
+      "surface": "#FFFFFF"
+    },
+    "typography": {
+      "family": "Arial, Helvetica, sans-serif",
+      "body": "16px",
+      "heading": "restrained scale, tight spacing"
+    },
+    "spacing": {},
+    "radius": {
+      "controls": "5px",
+      "surfaces": "10px"
+    },
+    "shadows": {},
+    "motion": {},
+    "density": "editorial public / compact admin"
+  },
+  "components": {
+    "installed": [],
+    "preferredPrimitives": [],
+    "patterns": []
+  },
+  "constraints": {
+    "must": [
+      "MasterCAD identity and supplied logo",
+      "Dominant primary amber #FFBF00 on landing page",
+      "Concept artwork explicitly labeled",
+      "Server-side authorization",
+      "Keyboard and responsive states"
+    ],
+    "avoid": [
+      "Decorative gradients",
+      "Glassmorphism",
+      "Invented client logos or metrics",
+      "Excessive card grids",
+      "Animated marquees"
+    ]
+  },
+  "decisions": [
+    "2026-10-05: Engineering studio editorial direction with restrained typography, full-width mechanical illustration, service rows and dark process section.",
+    "21st catalog component 29523: Portfolio Showcase Grid, adapted composition rather than importing marketing mockups or default rounded colorful cards.",
+    "Local preview uses persistent SQLite because PostgreSQL is not installed; production provider remains open.",
+    "2026-10-05 user revision: modern landing page with dominant MasterCAD amber hero/services/process/CTA, charcoal studio/portfolio/FAQ/footer, split hero image, 6px controls and 16px hero media radius; replaces the initial white-led home direction.",
+    "21st 19078 Split Hero With Image Cards: adapted copy/media hierarchy and contained image caption into existing React primitives; no animations, social proof or new dependencies imported.",
+    "2026-10-13 user requested a total homepage redesign after rejecting the charcoal-heavy presentation; current direction is a light warm-neutral engineering editorial layout with amber and charcoal focal sections, two-column hero, service rows, paired offer panels, featured work, process, FAQ, and consultation CTA."
+  ],
+  "evidence": [
+    "https://21st.dev/@uiable/components/block-portfolio-9",
+    "website/src/components/portfolio-grid.tsx",
+    "website/src/app/globals.css",
+    "https://21st.dev/@felipemenezes098/components/hero-08",
+    "website/src/app/landing.css",
+    "website/docs/evidence/21st-amber-review.json"
+  ],
+  "generatedAt": "2026-10-05T07:58:07.125Z"
+}

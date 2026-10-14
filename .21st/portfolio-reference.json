@@ -1,0 +1,36 @@
+{
+  "component": {
+    "id": 29523,
+    "componentId": 15831,
+    "authorUserId": "user_registry_uiable_1783486969177",
+    "name": "Portfolio Showcase Grid",
+    "demoName": "Default",
+    "description": "A colorful portfolio section with a heading, call-to-action button, and an asymmetric grid of project cards each showing a title, description, and mockup image.",
+    "previewUrl": "https://cdn.21st.dev/uiable/block-portfolio-9/default/preview.1790086682734-33f0427f-21b1-4e8b-a623-f01c78afd196.png",
+    "installCommand": "npx shadcn@latest add \"https://21st.dev/r/uiable/block-portfolio-9?api_key=$API_KEY_21ST\"",
+    "componentCode": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | PORTFOLIO 9 | ------------------------------  //\n\nconst projects = [\n  {\n    title: \"Breathe In\",\n    description:\n      \"Better a diamond with a flaw than a pebble without one. It's about creating yourself.\",\n    bgColor: \"bg-[#80b3ad]\",\n    image:\n      \"https://cdn.21st.dev/assets/localized/468ea6763477bf62330b8bd6830ab925cb20d121f4bdbfc8ce8847dd68f3e46a.png\",\n    isWide: true,\n  },\n  {\n    title: \"Clock Me\",\n    description: \"Better a diamond with a flaw than a pebble without one.\",\n    bgColor: \"bg-[#f48c68]\",\n    image:\n      \"https://cdn.21st.dev/assets/localized/3f52b612abfb1c1fe0d488e46d2ee18266f68d5215a1a8b98c588aa5b4e0dfb4.png\",\n    isWide: false,\n  },\n  {\n    title: \"Stream Co\",\n    description: \"Better a diamond with a flaw than a pebble without one.\",\n    bgColor: \"bg-[#3c9bf2]\",\n    image:\n      \"https://cdn.21st.dev/assets/localized/d8bddc6a71e5c9991c88edeb5eb231813cae0ac23b1cadc12e66fd8f29454040.png\",\n    isWide: false,\n  },\n  {\n    title: \"Nirvanous\",\n    description:\n      \"Better a diamond with a flaw than a pebble without one. It's about creating yourself.\",\n    bgColor: \"bg-[#7a60f9]\",\n    image:\n      \"https://cdn.21st.dev/assets/localized/f06acde1d097f0af17ee009592294311872511c272ba7a85e3517d789748b742.png\",\n    isWide: true,\n  },\n];\n\nexport default function Portfolio9() {\n  return (\n    <section className=\"bg-background py-24 sm:py-32\">\n      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\n        {/* Header Section */}\n        <div className=\"mb-16 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end\">\n          <div className=\"max-w-2xl\">\n            <h2 className=\"text-3xl text-foreground sm:text-4xl lg:text-5xl\">\n              Creative Solutions To <br className=\"hidden sm:inline\" />\n              Improve Your Business\n            </h2>\n            <p className=\"mt-4 text-base text-muted-foreground sm:text-lg\">\n              Only those who risk going too far can possibly find out how far\n              one can go.\n            </p>\n          </div>\n          <Button\n            size=\"lg\"\n            className=\"rounded-full hover:translate-y-1 hover:opacity-90\"\n          >\n            View Portfolio\n          </Button>\n        </div>\n\n        {/* Portfolio Grid */}\n        <div className=\"grid grid-cols-1 gap-6 md:grid-cols-12 lg:gap-8\">\n          {projects.map((project, idx) => (\n            <div\n              key={idx}\n              className={`group relative flex flex-col justify-between overflow-hidden rounded-[2rem] ${project.bgColor} ${\n                project.isWide ? \"md:col-span-7\" : \"md:col-span-5\"\n              } h-[380px] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:h-[450px] lg:h-[480px]`}\n            >\n              {/* Text Content */}\n              <div className=\"absolute top-8 right-8 left-8 z-20 flex flex-col gap-2 sm:top-10 sm:right-10 sm:left-10\">\n                <h3 className=\"text-2xl font-bold text-white sm:text-3xl\">\n                  {project.title}\n                </h3>\n                <p className=\"max-w-md text-sm leading-relaxed text-white/90 sm:text-base\">\n                  {project.description}\n                </p>\n              </div>\n\n              {/* Mockup Image */}\n              <div className=\"mt-auto flex w-full justify-center overflow-hidden\">\n                <img\n                  src={project.image}\n                  alt={project.title}\n                  className={`object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]`}\n                />\n              </div>\n            </div>\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n}\n",
+    "demoCode": "import Portfolio9 from \"@/components/ui/block-portfolio-9\";\n\nexport default function Preview() {\n  return <Portfolio9 />;\n}\n",
+    "registryDependencies": {
+      "filesWithRegistry": {
+        "/components/ui/button.tsx": {
+          "code": "import * as React from \"react\"\nimport { Slot } from \"@radix-ui/react-slot\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst buttonVariants = cva(\n  \"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50\",\n  {\n    variants: {\n      variant: {\n        default: \"bg-primary text-primary-foreground hover:bg-primary/90\",\n        destructive:\n          \"bg-destructive text-destructive-foreground hover:bg-destructive/90\",\n        outline:\n          \"border border-input bg-background hover:bg-accent hover:text-accent-foreground\",\n        secondary:\n          \"bg-secondary text-secondary-foreground hover:bg-secondary/80\",\n        ghost: \"hover:bg-accent hover:text-accent-foreground\",\n        link: \"text-primary underline-offset-4 hover:underline\",\n      },\n      size: {\n        default: \"h-10 px-4 py-2\",\n        sm: \"h-9 rounded-md px-3\",\n        lg: \"h-11 rounded-md px-8\",\n        icon: \"h-10 w-10\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"default\",\n    },\n  },\n)\n\nexport interface ButtonProps\n  extends React.ButtonHTMLAttributes<HTMLButtonElement>,\n    VariantProps<typeof buttonVariants> {\n  asChild?: boolean\n}\n\nconst Button = React.forwardRef<HTMLButtonElement, ButtonProps>(\n  ({ className, variant, size, asChild = false, ...props }, ref) => {\n    const Comp = asChild ? Slot : \"button\"\n    return (\n      <Comp\n        className={cn(buttonVariants({ variant, size, className }))}\n        ref={ref}\n        {...props}\n      />\n    )\n  },\n)\nButton.displayName = \"Button\"\n\nexport { Button, buttonVariants }\n",
+          "registry": "ui"
+        }
+      },
+      "npmDependencies": {
+        "@radix-ui/react-slot": "latest",
+        "class-variance-authority": "latest"
+      }
+    },
+    "isPublic": true,
+    "registryTeamId": null,
+    "registryUserId": "user_registry_uiable_1783486969177"
+  },
+  "quota": {
+    "tier": "free",
+    "remaining": 1,
+    "perDay": 2,
+    "resetAt": "2026-10-06T00:00:00.000Z",
+    "upgradeUrl": "https://21st.dev/pricing"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-05",
+  "origin": "http://127.0.0.1:3000",
+  "results": [
+    {
+      "check": "public /",
+      "status": "pass"
+    },
+    {
+      "check": "public /tentang",
+      "status": "pass"
+    },
+    {
+      "check": "public /layanan",
+      "status": "pass"
+    },
+    {
+      "check": "public /layanan/pemodelan-cad-3d",
+      "status": "pass"
+    },
+    {
+      "check": "public /portofolio",
+      "status": "pass"
+    },
+    {
+      "check": "public /portofolio/assembly-mekanikal",
+      "status": "pass"
+    },
+    {
+      "check": "public /kontak",
+      "status": "pass"
+    },
+    {
+      "check": "public /privasi",
+      "status": "pass"
+    },
+    {
+      "check": "public /robots.txt",
+      "status": "pass"
+    },
+    {
+      "check": "public /sitemap.xml",
+      "status": "pass"
+    },
+    {
+      "check": "public /health/ready",
+      "status": "pass"
+    },
+    {
+      "check": "anonymous admin API rejected",
+      "status": "pass"
+    },
+    {
+      "check": "cross-origin mutation rejected",
+      "status": "pass"
+    },
+    {
+      "check": "admin login",
+      "status": "pass"
+    },
+    {
+      "check": "UI consultation reaches inbox",
+      "status": "pass"
+    },
+    {
+      "check": "uploaded draft image private",
+      "status": "pass"
+    },
+    {
+      "check": "published portfolio and media public",
+      "status": "pass"
+    },
+    {
+      "check": "archive closes portfolio and media",
+      "status": "pass"
+    },
+    {
+      "check": "forged image MIME rejected",
+      "status": "pass"
+    },
+    {
+      "check": "logout revokes server access",
+      "status": "pass"
+    }
+  ]
+}

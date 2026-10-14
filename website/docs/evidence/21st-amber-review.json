@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "suggestions": 7
+  },
+  "filesReviewed": 4,
+  "findings": [
+    {
+      "ruleId": "design-hardcoded-color",
+      "severity": "info",
+      "category": "design-system",
+      "file": "website\\src\\app\\landing.css",
+      "line": 2,
+      "column": 19,
+      "message": "Hardcoded color may drift from project design tokens.",
+      "confidence": 0.9,
+      "autofix": false,
+      "fixable": false
+    },
+    {
+      "ruleId": "design-hardcoded-color",
+      "severity": "info",
+      "category": "design-system",
+      "file": "website\\src\\app\\landing.css",
+      "line": 3,
+      "column": 20,
+      "message": "Hardcoded color may drift from project design tokens.",
+      "confidence": 0.9,
+      "autofix": false,
+      "fixable": false
+    },
+    {
+      "ruleId": "design-hardcoded-color",
+      "severity": "info",
+      "category": "design-system",
+      "file": "website\\src\\app\\landing.css",
+      "line": 4,
+      "column": 20,
+      "message": "Hardcoded color may drift from project design tokens.",
+      "confidence": 0.9,
+      "autofix": false,
+      "fixable": false
+    },
+    {
+      "ruleId": "design-hardcoded-color",
+      "severity": "info",
+      "category": "design-system",
+      "file": "website\\src\\app\\landing.css",
+      "line": 5,
+      "column": 20,
+      "message": "Hardcoded color may drift from project design tokens.",
+      "confidence": 0.9,
+      "autofix": false,
+      "fixable": false
+    },
+    {
+      "ruleId": "design-hardcoded-color",
+      "severity": "info",
+      "category": "design-system",
+      "file": "website\\src\\app\\landing.css",
+      "line": 6,
+      "column": 24,
+      "message": "Hardcoded color may drift from project design tokens.",
+      "confidence": 0.9,
+      "autofix": false,
+      "fixable": false
+    },
+    {
+      "ruleId": "design-hardcoded-color",
+      "severity": "info",
+      "category": "design-system",
+      "file": "website\\src\\app\\landing.css",
+      "line": 7,
+      "column": 24,
+      "message": "Hardcoded color may drift from project design tokens.",
+      "confidence": 0.9,
+      "autofix": false,
+      "fixable": false
+    },
+    {
+      "ruleId": "design-hardcoded-color",
+      "severity": "info",
+      "category": "design-system",
+      "file": "website\\src\\app\\landing.css",
+      "line": 8,
+      "column": 25,
+      "message": "Hardcoded color may drift from project design tokens.",
+      "confidence": 0.9,
+      "autofix": false,
+      "fixable": false
+    }
+  ],
+  "fixed": []
+}
