@@ -20,7 +20,6 @@ import {
 } from "lucide-react";
 import { publicContent, settings } from "@/lib/content";
 import { DashboardMockup } from "@/components/dashboard-mockup";
-import { ServicesShowcase } from "@/components/services-showcase";
 import { PricingTable } from "@/components/pricing-table";
 import { TestimonialsShowcase } from "@/components/testimonials-showcase";
 
@@ -343,9 +342,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===================== 4 CAPABILITIES STUDIO SHOWCASE (INTERACTIVE) ===================== */}
-      <ServicesShowcase />
-
       {/* ===================== WORTH INVESTMENT (PRICING TABLE) ===================== */}
       <PricingTable />
 
@@ -495,7 +491,7 @@ export default function Home() {
       </section>
 
       {/* ===================== FINAL HIGH-IMPACT CTA ===================== */}
-      <section className="home-contact-cta">
+      <section id="kontak" className="home-contact-cta">
         <div className="container home-contact-inner">
           <div className="cta-left">
             <span className="home-eyebrow">LANGKAH BERIKUTNYA</span>
